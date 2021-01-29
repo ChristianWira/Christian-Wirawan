@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Gorditas&display=swap" rel="stylesheet"> 
+    <title>Finger Me</title>
+</head>
+<body>
+    <img alt= "finger" id = "finger" src="https://cdn2.iconfinder.com/data/icons/touch-gestures-linear-black/614/3447_-_Tap-512.png" >
+    <img alt= "finger" id = "finger" src="https://cdn2.iconfinder.com/data/icons/touch-gestures-linear-black/614/3447_-_Tap-512.png" >
+    <img alt= "finger" id = "finger" src="https://cdn2.iconfinder.com/data/icons/touch-gestures-linear-black/614/3447_-_Tap-512.png" >
+    <img alt= "finger" id = "finger" src="https://cdn2.iconfinder.com/data/icons/touch-gestures-linear-black/614/3447_-_Tap-512.png" >
+    <img alt= "finger" id = "finger" src="https://cdn2.iconfinder.com/data/icons/touch-gestures-linear-black/614/3447_-_Tap-512.png" >
+    <img alt= "finger" id = "finger" src="https://cdn2.iconfinder.com/data/icons/touch-gestures-linear-black/614/3447_-_Tap-512.png" >
+    <h1>Do Some Fingering</h1>
+    <img alt= "finger" id = "finger" src="https://cdn2.iconfinder.com/data/icons/touch-gestures-linear-black/614/3447_-_Tap-512.png" >
+    <img alt= "finger" id = "finger" src="https://cdn2.iconfinder.com/data/icons/touch-gestures-linear-black/614/3447_-_Tap-512.png" >
+    <img alt= "finger" id = "finger" src="https://cdn2.iconfinder.com/data/icons/touch-gestures-linear-black/614/3447_-_Tap-512.png" >
+    <img alt= "finger" id = "finger" src="https://cdn2.iconfinder.com/data/icons/touch-gestures-linear-black/614/3447_-_Tap-512.png" >
+    <img alt= "finger" id = "finger" src="https://cdn2.iconfinder.com/data/icons/touch-gestures-linear-black/614/3447_-_Tap-512.png" >
+    <img alt= "finger" id = "finger" src="https://cdn2.iconfinder.com/data/icons/touch-gestures-linear-black/614/3447_-_Tap-512.png" >
+
+        <p> This is a website that shows how good you are with your fingers. Mash your mouse till your finger can't take no more. let's see how fast are thoes fingers!</p>
+        <p><strong><em>Ladies love fast fingers</em></strong></p>
+       
+
+    <ul>
+        <li><a href="#leaderboard">Leaderboard</a></li>
+        <li><a href="#score">Your Score</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+        <div id = "main">
+            <div class= "timer">
+                <h3>Timer</h3>
+                <h3 id = "countdown">0</h3>
+                <button id = "time">Seconds</button>
+            </div>
+            <div class="start">
+                <button id = "startButton">Start Button</button>
+                <button id = "clicker">Finger Me!</button>
+            </div>
+            <div class= "clicks">
+                <h3>Clicks</h3>
+                <h3 id = "incrementCount">0</h3>
+            </div>
+        </div>
+        <script>
+            document.getElementById("startButton").addEventListener("click", start)
+            document.getElementById("clicker").addEventListener("click", clickers)
+            document.getElementById("time").addEventListener("click", time)
+
+            let waktu = 0
+            function time () {
+                waktu++
+                document.getElementById("countdown").innerHTML = waktu 
+            }
+
+            let number = 0
+            function clickers () {
+                number++
+                document.getElementById("incrementCount").innerHTML = number
+    
+            }
+            
+            
+            
+            function start () {
+               
+                setTimeout(() => {
+                    alert(`You Fingered Me For ${number}`) 
+                    document.getElementById("incrementCount").innerHTML = 0
+                    number = 0
+                    document.getElementById("countdown").innerHTML = 0
+                    waktu = 0
+                }, waktu * 1000 )
+            }
+            
+        </script>    
+</body>
+</html>
